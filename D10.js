@@ -462,17 +462,47 @@ stampaTd();
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+function backgroundA() {
+  let arrayA = document.querySelectorAll("a");
+  for (let i = 0; i < arrayA.length; i++) {
+    arrayA[i].style.backgroundColor = "yellow";
+  }
+}
+backgroundA();
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+
+function aggiungiLi() {
+  const list = document.getElementById("myList");
+  const li = document.createElement("li");
+  li.innerText = 4;
+  list.appendChild(li);
+}
+aggiungiLi();
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+function svuotaUl() {
+  const list = document.getElementById("myList");
+  list.innerHTML = "";
+}
+svuotaUl();
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+
+function aggiungiClasse() {
+  const listTr = document.querySelectorAll("tr");
+  for (let i = 0; i < listTr.length; i++) {
+    listTr[i].classList.add("test");
+  }
+}
+aggiungiClasse();
 
 // [EXTRA] JS Avanzato
 
